@@ -6,7 +6,7 @@ class BubbleSorting:
         self.bubble_sort(array_to_sort)
 
     def bubble_sort(self, arrayToSort: list):
-        for j in range(0, len(arrayToSort)-1):
+        for j in range(0, len(arrayToSort)):
             i = len(arrayToSort) - 1
             while i > 0:
                 if arrayToSort[i] < arrayToSort[i - 1]:

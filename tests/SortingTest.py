@@ -2,6 +2,7 @@ import unittest
 import random
 import copy
 from algos.sorting import BubbleSorting
+from algos.sorting import SelectionSorting
 
 
 class TestStringMethods(unittest.TestCase):
@@ -18,7 +19,9 @@ class TestStringMethods(unittest.TestCase):
         bubbleSortedArray = BubbleSorting.BubbleSorting(self.testArray).sortedArray
         self.assertEqual(bubbleSortedArray, self.originalArray)
 
-    def test
+    def test_selection_sort(self):
+        selectionSortedArray = SelectionSorting.SelectionSorting(self.testArray).sortedArray
+        self.assertEqual(selectionSortedArray, self.originalArray)
 
 if __name__ == '__main__':
     unittest.main()
